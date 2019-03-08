@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f4f1ea;
+	color: #333333;
+}
+
+#header {
+	background-color: #8a3324;
+	height: 60px;
+	padding: 0px;
+}
+
+.logo {
+	color: #ffffff;
+	font-size: 26px;
+	font-weight: bold;
+	float: left;
+	padding: 14px 0px 0px 20px;
+}
+
+#nav {
+	float: right;
+	padding: 18px 20px 0px 0px;
+}
+
+#nav a {
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 18px;
+	font-size: 15px;
+}
+
+#nav a:hover {
+	text-decoration: underline;
+	color: #f2d9c5;
+}
+
+#banner {
+	background-color: #b5651d;
+	height: 220px;
+	text-align: center;
+}
+
+#main {
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px 0px;
+}
+
+.box {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 15px;
+	margin: 10px;
+	width: 260px;
+	float: left;
+	min-height: 230px;
+	box-shadow: 2px 2px 3px #dddddd;
+}
+
+.box h2 {
+	color: #8a3324;
+	margin-top: 0px;
+	border-bottom: 2px solid #b5651d;
+	padding-bottom: 5px;
+}
+
+table.hours {
+	width: 100%;
+	font-size: 14px;
+}
+
+table.hours td {
+	padding: 3px;
+}
+
+#footer {
+	background-color: #333333;
+	color: #cccccc;
+	text-align: center;
+	padding: 12px;
+	font-size: 13px;
+	clear: both;
+}
