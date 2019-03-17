@@ -84,3 +84,39 @@ table.hours td {
 	font-size: 13px;
 	clear: both;
 }
+
+/* menu page */
+.menu-section {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	width: 860px;
+	margin: 10px auto;
+	padding: 15px 20px;
+}
+
+.menu-section h2 {
+	color: #8a3324;
+	border-bottom: 2px solid #b5651d;
+	padding-bottom: 5px;
+}
+
+.menu-item {
+	padding: 8px 0px;
+	border-bottom: 1px dotted #cccccc;
+}
+
+.item-name {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.item-price {
+	float: right;
+	color: #8a3324;
+	font-weight: bold;
+}
+
+.item-desc {
+	font-size: 13px;
+	color: #777777;
+}
