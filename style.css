@@ -120,3 +120,73 @@ table.hours td {
 	font-size: 13px;
 	color: #777777;
 }
+
+/* chat widget */
+#chatbox {
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+	width: 280px;
+	background-color: #ffffff;
+	border: 1px solid #999999;
+}
+
+#chathead {
+	background-color: #8a3324;
+	color: #ffffff;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	border-bottom: 2px solid #b5651d;
+}
+
+#chatmsgs {
+	height: 240px;
+	overflow-y: scroll;
+	padding: 8px;
+	background-color: #f4f1ea;
+}
+
+.usermsg {
+	background-color: #b5651d;
+	color: #ffffff;
+	padding: 6px 8px;
+	margin: 5px 0px;
+	border-radius: 4px;
+	max-width: 200px;
+	float: right;
+	clear: both;
+	font-size: 13px;
+}
+
+.botmsg {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	color: #333333;
+	padding: 6px 8px;
+	margin: 5px 0px;
+	border-radius: 4px;
+	max-width: 200px;
+	float: left;
+	clear: both;
+	font-size: 13px;
+}
+
+#chatinput {
+	padding: 6px;
+	clear: both;
+}
+
+#chatinput input {
+	width: 200px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+}
+
+#chatinput button {
+	background-color: #8a3324;
+	color: #ffffff;
+	border: none;
+	padding: 5px 8px;
+	cursor: pointer;
+}
