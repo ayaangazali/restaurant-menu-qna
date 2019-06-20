@@ -1,6 +1,14 @@
 // chatbot stuff
 
 function sendMsg() {
+	var text = document.getElementById("userinput").value;
+	if (text == "") {
+		return;
+	}
+	addUser(text);
+	document.getElementById("userinput").value = "";
+
+	addBot("Thanks for your message!");
 }
 
 function addUser(t) {
