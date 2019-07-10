@@ -1,5 +1,10 @@
 // chatbot stuff
 
+var rules = [
+	{keywords:["hours","open","close","timing","time","when"], reply:"We are open Mon-Wed 11am-9pm, Thu 11am-10pm, Fri 11am-11pm, Sat 10am-11pm and Sun 10am-8pm."},
+	{keywords:["location","address","where","directions","find"], reply:"We are located at 142 Maple Street, Riverton, OH 45011. See you soon!"}
+];
+
 function sendMsg() {
 	var text = document.getElementById("userinput").value;
 	if (text == "") {
@@ -8,7 +13,24 @@ function sendMsg() {
 	addUser(text);
 	document.getElementById("userinput").value = "";
 
-	addBot("Thanks for your message!");
+	var lc = text.toLowerCase();
+	var found = false;
+	for (var i = 0; i < rules.length; i++) {
+		for (var j = 0; j < rules[i].keywords.length; j++) {
+			if (lc.indexOf(rules[i].keywords[j]) != -1) {
+				addBot(rules[i].reply);
+				found = true;
+				break;
+			}
+		}
+		if (found) {
+			break;
+		}
+	}
+
+	if (!found) {
+		addBot("Thanks for your message!");
+	}
 }
 
 function addUser(t) {
