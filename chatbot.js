@@ -5,7 +5,9 @@ var rules = [
 	{keywords:["location","address","where","directions","find"], reply:"We are located at 142 Maple Street, Riverton, OH 45011. See you soon!"},
 	{keywords:["menu","food","dishes","eat","serve"], reply:"You can see our full menu on the Menu page. We have starters, mains, desserts and drinks!"},
 	{keywords:["contact","phone","call","number","email"], reply:"You can reach us at (555) 482-1190 or email hello@thecopperspoon.com."},
-	{keywords:["reservation","reserve","book","booking","table"], reply:"Sure! To book a table just give us a call at (555) 482-1190 and we will set you up."}
+	{keywords:["reservation","reserve","book","booking","table"], reply:"Sure! To book a table just give us a call at (555) 482-1190 and we will set you up."},
+	{keywords:["parking","park","lot"], reply:"Yes we have a free parking lot right behind the building. Street parking is also available."},
+	{keywords:["delivery","deliver","takeout","take out","take-out"], reply:"We offer takeout and we also deliver within 5 miles. Call (555) 482-1190 to place an order."}
 ];
 
 function sendMsg() {
