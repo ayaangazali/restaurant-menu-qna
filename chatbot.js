@@ -34,7 +34,7 @@ function sendMsg() {
 	}
 
 	if (!found) {
-		addBot("Thanks for your message!");
+		addBot("Sorry, I didn't get that - call us at (555) 482-1190.");
 	}
 }
 
