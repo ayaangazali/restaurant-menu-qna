@@ -51,3 +51,17 @@ function addBot(t) {
 	div.innerHTML = t;
 	document.getElementById("chatmsgs").appendChild(div);
 }
+
+function toggleChat() {
+	$("#chatmsgs").toggle();
+	$("#chatinput").toggle();
+}
+
+// send on enter key
+$(document).ready(function(){
+	$("#userinput").keypress(function(e){
+		if (e.which == 13) {
+			sendMsg();
+		}
+	});
+});
